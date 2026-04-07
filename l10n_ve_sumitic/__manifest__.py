@@ -17,7 +17,6 @@
         'data/account.account.csv',
         'data/account_tax_group_data.xml',
         'data/account_tax_data.xml',
-        'data/account_chart_template.xml',
         'data/ir_cron_data.xml',
         'views/res_company_views.xml',
         'views/res_config_settings_views.xml',

@@ -15,7 +15,7 @@
     'data': [
         'security/ir.model.access.csv',
         'data/res_country_state_data.xml',
-        'data/account.account.csv',
+        'data/account_account_data.xml',
         'data/account_tax_group_data.xml',
         'data/account_tax_data.xml',
         'data/ir_cron_data.xml',

@@ -2,36 +2,41 @@
 <odoo>
     <data noupdate="1">
         
-        <record id="mun_libertador" model="res.country.state.municipality">
+        <record id="mun_ve_a_libertador" model="res.country.state.municipality">
             <field name="name">Libertador</field>
             <field name="state_id" search="[('code', '=', 'VE-A')]"/>
         </record>
 
-        <record id="mun_chacao" model="res.country.state.municipality">
-            <field name="name">Chacao</field>
-            <field name="state_id" search="[('code', '=', 'VE-M')]"/>
-        </record>
-        <record id="mun_sucre" model="res.country.state.municipality">
-            <field name="name">Sucre</field>
-            <field name="state_id" search="[('code', '=', 'VE-M')]"/>
-        </record>
-        <record id="mun_plaza" model="res.country.state.municipality">
-            <field name="name">Plaza (Guarenas)</field>
-            <field name="state_id" search="[('code', '=', 'VE-M')]"/>
-        </record>
+        <record id="mun_ve_m_chacao" model="res.country.state.municipality"><field name="name">Chacao</field><field name="state_id" search="[('code', '=', 'VE-M')]"/></record>
+        <record id="mun_ve_m_baruta" model="res.country.state.municipality"><field name="name">Baruta</field><field name="state_id" search="[('code', '=', 'VE-M')]"/></record>
+        <record id="mun_ve_m_sucre" model="res.country.state.municipality"><field name="name">Sucre</field><field name="state_id" search="[('code', '=', 'VE-M')]"/></record>
+        <record id="mun_ve_m_hatillo" model="res.country.state.municipality"><field name="name">El Hatillo</field><field name="state_id" search="[('code', '=', 'VE-M')]"/></record>
+        <record id="mun_ve_m_plaza" model="res.country.state.municipality"><field name="name">Plaza (Guarenas)</field><field name="state_id" search="[('code', '=', 'VE-M')]"/></record>
+        <record id="mun_ve_m_zamora" model="res.country.state.municipality"><field name="name">Zamora (Guatire)</field><field name="state_id" search="[('code', '=', 'VE-M')]"/></record>
+        <record id="mun_ve_m_guaicaipuro" model="res.country.state.municipality"><field name="name">Guaicaipuro</field><field name="state_id" search="[('code', '=', 'VE-M')]"/></record>
 
-        <record id="mun_valencia" model="res.country.state.municipality">
-            <field name="name">Valencia</field>
-            <field name="state_id" search="[('code', '=', 'VE-G')]"/>
-        </record>
+        <record id="mun_ve_g_valencia" model="res.country.state.municipality"><field name="name">Valencia</field><field name="state_id" search="[('code', '=', 'VE-G')]"/></record>
+        <record id="mun_ve_g_naguanagua" model="res.country.state.municipality"><field name="name">Naguanagua</field><field name="state_id" search="[('code', '=', 'VE-G')]"/></record>
+        <record id="mun_ve_g_sandiego" model="res.country.state.municipality"><field name="name">San Diego</field><field name="state_id" search="[('code', '=', 'VE-G')]"/></record>
 
-        <record id="mun_maracaibo" model="res.country.state.municipality">
-            <field name="name">Maracaibo</field>
-            <field name="state_id" search="[('code', '=', 'VE-V')]"/>
-        </record>
+        <record id="mun_ve_v_maracaibo" model="res.country.state.municipality"><field name="name">Maracaibo</field><field name="state_id" search="[('code', '=', 'VE-V')]"/></record>
+        <record id="mun_ve_v_sanfran" model="res.country.state.municipality"><field name="name">San Francisco</field><field name="state_id" search="[('code', '=', 'VE-V')]"/></record>
 
-        <record id="mun_atures" model="res.country.state.municipality">
-            <field name="name">Atures</field>
+        <record id="mun_ve_d_girardot" model="res.country.state.municipality"><field name="name">Girardot (Maracay)</field><field name="state_id" search="[('code', '=', 'VE-D')]"/></record>
+        <record id="mun_ve_d_ribas" model="res.country.state.municipality"><field name="name">José Félix Ribas</field><field name="state_id" search="[('code', '=', 'VE-D')]"/></record>
+
+        <record id="mun_ve_k_iribarren" model="res.country.state.municipality"><field name="name">Iribarren (Barquisimeto)</field><field name="state_id" search="[('code', '=', 'VE-K')]"/></record>
+        <record id="mun_ve_k_palavecino" model="res.country.state.municipality"><field name="name">Palavecino</field><field name="state_id" search="[('code', '=', 'VE-K')]"/></record>
+
+        <record id="mun_ve_o_marino" model="res.country.state.municipality"><field name="name">Mariño (Porlamar)</field><field name="state_id" search="[('code', '=', 'VE-O')]"/></record>
+        <record id="mun_ve_o_maneiro" model="res.country.state.municipality"><field name="name">Maneiro</field><field name="state_id" search="[('code', '=', 'VE-O')]"/></record>
+
+        <record id="mun_ve_f_caroni" model="res.country.state.municipality"><field name="name">Caroní (Puerto Ordaz)</field><field name="state_id" search="[('code', '=', 'VE-F')]"/></record>
+
+        <record id="mun_ve_c_urbaneja" model="res.country.state.municipality"><field name="name">Diego Bautista Urbaneja (Lechería)</field><field name="state_id" search="[('code', '=', 'VE-C')]"/></record>
+
+        <record id="mun_ve_z_atures" model="res.country.state.municipality">
+            <field name="name">Atures (Puerto Ayacucho)</field>
             <field name="state_id" search="[('code', '=', 'VE-Z')]"/>
         </record>
 

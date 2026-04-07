@@ -17,7 +17,7 @@
     'data': [
         'security/ir.model.access.csv',
         'data/res_country_state_data.xml',
-        'data/l10n_ve_hierarchy_data.xml'
+        'data/l10n_ve_hierarchy_data.xml',
         'data/account_tax_group_data.xml',
         
         # --- CAMBIO CRÍTICO AQUÍ ---

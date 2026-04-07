@@ -5,12 +5,21 @@
         <field name="model">account.move</field>
         <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
+            
             <xpath expr="//field[@name='invoice_date']" position="after">
+                
                 <field name="l10n_ve_control_number" 
+                       placeholder="00-000000"
                        invisible="move_type not in ('out_invoice', 'out_refund', 'in_invoice', 'in_refund')"
+                       readonly="state == 'posted'"
                        required="move_type in ('out_invoice', 'out_refund') and state == 'posted'"/>
-                <field name="l10n_ve_taxpayer_type" readonly="1" groups="base.group_no_one"/>
+
+                <field name="l10n_ve_taxpayer_type" 
+                       invisible="move_type not in ('out_invoice', 'out_refund', 'in_invoice', 'in_refund')"
+                       placeholder="Seleccione tipo..."/>
+                
             </xpath>
+
         </field>
     </record>
 </odoo>

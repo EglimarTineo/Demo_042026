@@ -17,6 +17,7 @@
     'data': [
         'security/ir.model.access.csv',
         'data/res_country_state_data.xml',
+        'data/l10n_ve_hierarchy_data.xml'
         'data/account_tax_group_data.xml',
         
         # --- CAMBIO CRÍTICO AQUÍ ---
@@ -25,6 +26,7 @@
         # ---------------------------
         
         'data/ir_cron_data.xml',
+        'views/res_partner_views.xml'
         'views/res_company_views.xml',
         'views/res_config_settings_views.xml',
         'views/account_move.xml',

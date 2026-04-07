@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="mun_ve_z_atures" model="res.country.state.municipality"><field name="name">Atures</field><field name="state_id" ref="base.state_ve_z"/></record>
+        
+        <record id="mun_ve_c_bolivar" model="res.country.state.municipality"><field name="name">Simón Bolívar</field><field name="state_id" ref="base.state_ve_c"/></record>
+        <record id="mun_ve_c_sotillo" model="res.country.state.municipality"><field name="name">Juan Antonio Sotillo</field><field name="state_id" ref="base.state_ve_c"/></record>
+        <record id="mun_ve_c_urbaneja" model="res.country.state.municipality"><field name="name">Diego Bautista Urbaneja</field><field name="state_id" ref="base.state_ve_c"/></record>
+
+        <record id="mun_ve_b_paez" model="res.country.state.municipality"><field name="name">Páez</field><field name="state_id" ref="base.state_ve_b"/></record>
+
+        <record id="mun_ve_d_girardot" model="res.country.state.municipality"><field name="name">Girardot</field><field name="state_id" ref="base.state_ve_d"/></record>
+        <record id="mun_ve_d_ribas" model="res.country.state.municipality"><field name="name">José Félix Ribas</field><field name="state_id" ref="base.state_ve_d"/></record>
+
+        <record id="mun_ve_f_caroni" model="res.country.state.municipality"><field name="name">Caroní</field><field name="state_id" ref="base.state_ve_f"/></record>
+        <record id="mun_ve_f_heres" model="res.country.state.municipality"><field name="name">Angostura del Orinoco</field><field name="state_id" ref="base.state_ve_f"/></record>
+
+        <record id="mun_ve_g_valencia" model="res.country.state.municipality"><field name="name">Valencia</field><field name="state_id" ref="base.state_ve_g"/></record>
+        <record id="mun_ve_g_naguanagua" model="res.country.state.municipality"><field name="name">Naguanagua</field><field name="state_id" ref="base.state_ve_g"/></record>
+        <record id="mun_ve_g_sandiego" model="res.country.state.municipality"><field name="name">San Diego</field><field name="state_id" ref="base.state_ve_g"/></record>
+
+        <record id="mun_ve_i_miranda" model="res.country.state.municipality"><field name="name">Miranda</field><field name="state_id" ref="base.state_ve_i"/></record>
+        <record id="mun_ve_i_carirubana" model="res.country.state.municipality"><field name="name">Carirubana</field><field name="state_id" ref="base.state_ve_i"/></record>
+
+        <record id="mun_ve_k_iribarren" model="res.country.state.municipality"><field name="name">Iribarren</field><field name="state_id" ref="base.state_ve_k"/></record>
+        <record id="mun_ve_k_palavecino" model="res.country.state.municipality"><field name="name">Palavecino</field><field name="state_id" ref="base.state_ve_k"/></record>
+
+        <record id="mun_ve_o_marino" model="res.country.state.municipality"><field name="name">Mariño</field><field name="state_id" ref="base.state_ve_o"/></record>
+        <record id="mun_ve_o_maneiro" model="res.country.state.municipality"><field name="name">Maneiro</field><field name="state_id" ref="base.state_ve_o"/></record>
+
+        <record id="mun_ve_r_sancristobal" model="res.country.state.municipality"><field name="name">San Cristóbal</field><field name="state_id" ref="base.state_ve_r"/></record>
+
+        <record id="mun_ve_v_maracaibo" model="res.country.state.municipality"><field name="name">Maracaibo</field><field name="state_id" ref="base.state_ve_v"/></record>
+        <record id="mun_ve_v_sanfran" model="res.country.state.municipality"><field name="name">San Francisco</field><field name="state_id" ref="base.state_ve_v"/></record>
+    </data>
+</odoo>

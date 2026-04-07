@@ -2,12 +2,13 @@
     'name': 'Venezuela - Contabilidad Sumitic',
     'version': '19.0.1.0.0',
     'summary': 'Localización Contable para Venezuela adaptada para Odoo 19',
-    'category': 'Accounting/Localizations/Account Chart',
+    'category': 'Accounting/Localizations/Account Charts', # <--- CORREGIDO CON 'S'
     'author': 'Sumitic',
     'website': 'https://sumitic.lat',
     'license': 'LGPL-3',
     'depends': [
         'account',
+        'account_accountant', # RECOMENDADO: Para que active el menú de Contabilidad completo
         'base_vat',
         'l10n_ve',
     ],

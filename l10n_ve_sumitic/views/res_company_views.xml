@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_company_form_l10n_ve_sumitic" model="ir.ui.view">
+        <field name="name">res.company.form.inherit.l10n.ve.sumitic</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="attributes">
+                <attribute name="string">RIF</attribute>
+            </xpath>
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="taxpayer_type"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

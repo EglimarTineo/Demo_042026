@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_l10n_ve_sumitic" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.l10n.ve.sumitic</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='accounting_reports']" position="after">
+                <block title="Localización Venezuela (Sumitic)" id="l10n_ve_section">
+                    <setting string="Identificación Fiscal" help="Configure el RIF y tipo de contribuyente de su empresa">
+                        <div class="content-group">
+                            <div class="row mt16">
+                                <label for="vat" class="col-lg-3 o_light_label"/>
+                                <field name="vat"/>
+                            </div>
+                            <div class="row">
+                                <label for="taxpayer_type" class="col-lg-3 o_light_label"/>
+                                <field name="taxpayer_type"/>
+                            </div>
+                        </div>
+                    </setting>
+                    <setting string="Impuestos Especiales" help="Configuración de IGTF 3%">
+                        <field name="l10n_ve_igtf_tax_id" class="oe_inline"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

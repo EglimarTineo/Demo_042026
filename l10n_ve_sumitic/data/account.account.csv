@@ -1,0 +1,35 @@
+id,name,code,account_type,reconcile
+sumitic_ve_110101,CAJA PRINCIPAL BS,110101,asset_cash,True
+sumitic_ve_110102,BANCO NACIONAL BS,110102,asset_cash,True
+sumitic_ve_110103,BANCO CUSTODIA USD,110103,asset_cash,True
+sumitic_ve_110104,PAGOS PENDIENTES POR CONCILIAR,110104,asset_current,True
+sumitic_ve_110105,TARJETAS POR COBRAR (PUNTO DE VENTA),110105,asset_current,True
+sumitic_ve_110301,CLIENTES NACIONALES BS,110301,asset_receivable,True
+sumitic_ve_110302,CLIENTES NACIONALES USD,110302,asset_receivable,True
+sumitic_ve_110303,ANTICIPOS A PROVEEDORES BS,110303,asset_current,True
+sumitic_ve_110304,ANTICIPOS A PROVEEDORES USD,110304,asset_current,True
+sumitic_ve_110501,IVA CREDITO FISCAL (16%),110501,asset_current,True
+sumitic_ve_110502,IVA CREDITO FISCAL (REDUCIDO 8%),110502,asset_current,True
+sumitic_ve_110503,IVA CREDITO FISCAL (SUNTUARIO 31%),110503,asset_current,True
+sumitic_ve_110504,RETENCIONES DE IVA ACUMULADAS,110504,asset_current,True
+sumitic_ve_110505,RETENCIONES DE ISLR ACUMULADAS,110505,asset_current,True
+sumitic_ve_210101,PROVEEDORES NACIONALES BS,210101,liability_payable,True
+sumitic_ve_210102,ANTICIPOS DE CLIENTES BS,210102,liability_current,True
+sumitic_ve_210103,ANTICIPOS DE CLIENTES USD,210103,liability_current,True
+sumitic_ve_210201,IVA DEBITO FISCAL (16%),210201,liability_current,True
+sumitic_ve_210202,IVA DEBITO FISCAL (REDUCIDO 8%),210202,liability_current,True
+sumitic_ve_210203,IVA DEBITO FISCAL (SUNTUARIO 31%),210203,liability_current,True
+sumitic_ve_210204,IGTF POR ENTERAR (3%),210204,liability_current,True
+sumitic_ve_210205,RETENCIONES IVA POR ENTERAR,210205,liability_current,True
+sumitic_ve_210206,RETENCIONES ISLR - HONORARIOS,210206,liability_current,True
+sumitic_ve_210207,RETENCIONES ISLR - SERVICIOS,210207,liability_current,True
+sumitic_ve_210208,CONTRIBUCION ESPECIAL DE PENSIONES,210208,liability_current,True
+sumitic_ve_310101,CAPITAL SOCIAL,310101,equity,False
+sumitic_ve_310102,RESULTADOS ACUMULADOS,310102,equity,False
+sumitic_ve_310103,RESULTADO DEL EJERCICIO,310103,equity_unappropriated,False
+sumitic_ve_410101,VENTAS NACIONALES (GRAVADAS),410101,income,False
+sumitic_ve_410102,VENTAS EXENTAS / EXONERADAS,410102,income,False
+sumitic_ve_410103,GANANCIA POR DIFERENCIAL CAMBIARIO,410103,income,False
+sumitic_ve_510101,COMPRAS NACIONALES (GRAVADAS),510101,expense,False
+sumitic_ve_510102,PERDIDA POR DIFERENCIAL CAMBIARIO,510102,expense,False
+sumitic_ve_510103,GASTOS BANCARIOS E IGTF BANCARIO,510103,expense,False

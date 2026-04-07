@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
+    <data noupdate="1">
+
         <record id="tax_sale_iva_16" model="account.tax">
             <field name="name">IVA 16% Ventas</field>
             <field name="type_tax_use">sale</field>
             <field name="amount">16.0</field>
             <field name="amount_type">percent</field>
             <field name="tax_group_id" ref="tax_group_iva_16"/>
-            <field name="account_id" ref="sumitic_ve_210201"/> <field name="refund_account_id" ref="sumitic_ve_210201"/>
             <field name="description">IVA 16%</field>
             <field name="sequence">10</field>
             <field name="country_id" ref="base.ve"/>
-        </record>
-
-        <record id="tax_sale_igtf_3" model="account.tax">
-            <field name="name">IGTF 3% (Percibido)</field>
-            <field name="type_tax_use">sale</field>
-            <field name="amount">3.0</field>
-            <field name="amount_type">percent</field>
-            <field name="tax_group_id" ref="tax_group_igtf_3"/>
-            <field name="account_id" ref="sumitic_ve_210204"/> <field name="description">IGTF 3%</field>
-            <field name="sequence">20</field>
-            <field name="country_id" ref="base.ve"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0, 0, {'repartition_type': 'base', 'factor_percent': 100.0}),
+                (0, 0, {'repartition_type': 'tax', 'factor_percent': 100.0, 'account_id': ref('sumitic_ve_210201')}),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0, 0, {'repartition_type': 'base', 'factor_percent': 100.0}),
+                (0, 0, {'repartition_type': 'tax', 'factor_percent': 100.0, 'account_id': ref('sumitic_ve_210201')}),
+            ]"/>
         </record>
 
         <record id="tax_purchase_iva_16" model="account.tax">
@@ -30,30 +27,71 @@
             <field name="amount">16.0</field>
             <field name="amount_type">percent</field>
             <field name="tax_group_id" ref="tax_group_iva_16"/>
-            <field name="account_id" ref="sumitic_ve_110501"/> <field name="refund_account_id" ref="sumitic_ve_110501"/>
-            <field name="description">IVA 16%</field>
+            <field name="description">IVA 16% (C)</field>
             <field name="sequence">10</field>
             <field name="country_id" ref="base.ve"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0, 0, {'repartition_type': 'base', 'factor_percent': 100.0}),
+                (0, 0, {'repartition_type': 'tax', 'factor_percent': 100.0, 'account_id': ref('sumitic_ve_110501')}),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0, 0, {'repartition_type': 'base', 'factor_percent': 100.0}),
+                (0, 0, {'repartition_type': 'tax', 'factor_percent': 100.0, 'account_id': ref('sumitic_ve_110501')}),
+            ]"/>
         </record>
 
-        <record id="tax_purchase_iva_8" model="account.tax">
-            <field name="name">IVA 8% Compras (Reducido)</field>
-            <field name="type_tax_use">purchase</field>
+        <record id="tax_sale_iva_8" model="account.tax">
+            <field name="name">IVA 8% Ventas (Reducido)</field>
+            <field name="type_tax_use">sale</field>
             <field name="amount">8.0</field>
             <field name="amount_type">percent</field>
             <field name="tax_group_id" ref="tax_group_iva_8"/>
-            <field name="account_id" ref="sumitic_ve_110502"/>
             <field name="description">IVA 8%</field>
-            <field name="sequence">11</field>
             <field name="country_id" ref="base.ve"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0, 0, {'repartition_type': 'base', 'factor_percent': 100.0}),
+                (0, 0, {'repartition_type': 'tax', 'factor_percent': 100.0, 'account_id': ref('sumitic_ve_210202')}),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0, 0, {'repartition_type': 'base', 'factor_percent': 100.0}),
+                (0, 0, {'repartition_type': 'tax', 'factor_percent': 100.0, 'account_id': ref('sumitic_ve_210202')}),
+            ]"/>
         </record>
 
-        <record id="tax_purchase_retention_iva_75" model="account.tax">
-            <field name="name">Retención IVA 75%</field>
-            <field name="type_tax_use">none</field> <field name="amount">-75.0</field>
-            <field name="amount_type">division</field> <field name="tax_group_id" ref="tax_group_retencion_iva"/>
-            <field name="account_id" ref="sumitic_ve_210205"/> <field name="description">RET IVA 75%</field>
+        <record id="tax_sale_iva_31" model="account.tax">
+            <field name="name">IVA 31% Ventas (Suntuario)</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">31.0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_iva_31"/>
+            <field name="description">IVA 31%</field>
             <field name="country_id" ref="base.ve"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0, 0, {'repartition_type': 'base', 'factor_percent': 100.0}),
+                (0, 0, {'repartition_type': 'tax', 'factor_percent': 100.0, 'account_id': ref('sumitic_ve_210203')}),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0, 0, {'repartition_type': 'base', 'factor_percent': 100.0}),
+                (0, 0, {'repartition_type': 'tax', 'factor_percent': 100.0, 'account_id': ref('sumitic_ve_210203')}),
+            ]"/>
+        </record>
+
+        <record id="tax_igtf_3" model="account.tax">
+            <field name="name">IGTF 3% Percibido</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">3.0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_igtf_3"/>
+            <field name="description">IGTF 3%</field>
+            <field name="country_id" ref="base.ve"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0, 0, {'repartition_type': 'base', 'factor_percent': 100.0}),
+                (0, 0, {'repartition_type': 'tax', 'factor_percent': 100.0, 'account_id': ref('sumitic_ve_210204')}),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0, 0, {'repartition_type': 'base', 'factor_percent': 100.0}),
+                (0, 0, {'repartition_type': 'tax', 'factor_percent': 100.0, 'account_id': ref('sumitic_ve_210204')}),
+            ]"/>
         </record>
 
     </data>

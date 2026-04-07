@@ -4,9 +4,17 @@ from odoo import models, fields, api
 class ResPartner(models.Model):
     _inherit = 'res.partner'
 
-    # Nuevos campos para la localización Sumitic
+    # Venezuela por defecto para agilizar la carga de la contadora
+    country_id = fields.Many2one(
+        'res.country', 
+        string='País', 
+        default=lambda self: self.env.ref('base.ve').id
+    )
+    
     municipality_id = fields.Many2one('res.country.state.municipality', string='Municipio')
     parish_id = fields.Many2one('res.country.state.parish', string='Parroquia')
+
+# --- Clases de Soporte para la Estructura Territorial ---
 
 class ResCountryState(models.Model):
     _inherit = 'res.country.state'
